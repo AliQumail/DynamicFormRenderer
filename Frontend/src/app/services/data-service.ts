@@ -9,6 +9,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   public getFormsJsonData(): Observable<any> {
-    return this.http.get('https://localhost:7277/api/Forms/GetDynamicForms');
+    return this.http.get('https://localhost:7290/api/Forms/GetDynamicForms');
   }
 }
