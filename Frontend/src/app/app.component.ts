@@ -33,6 +33,5 @@ export class AppComponent implements OnInit {
 
   onSubmit() {
     console.log(this.dynamicForm.value);
-    alert(this.dynamicForm.value);
   }
 }

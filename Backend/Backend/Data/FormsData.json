@@ -1,0 +1,400 @@
+﻿[
+  {
+    "Name": "ItemType",
+    "Description": "Item Type",
+    "Placeholder": "Item Type",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 0,
+      "y": 0
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    },
+    "ValidValues": [
+      {
+        "Value": "PLNSUP",
+        "Description": "PLNSUP"
+      },
+      {
+        "Value": "PLNSUP2",
+        "Description": "PLNSUP2"
+      },
+      {
+        "Value": "PLNSUP3",
+        "Description": "PLNSUP3"
+      }
+    ]
+  },
+  {
+    "Name": "SubType",
+    "Description": "Subtype",
+    "Placeholder": "POOLED - Poo",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 200,
+      "y": 0
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    },
+    "ValidValues": [
+      {
+        "Value": "PLNSUP",
+        "Description": "PLNSUP"
+      },
+      {
+        "Value": "PLNSUP2",
+        "Description": "PLNSUP2"
+      },
+      {
+        "Value": "PLNSUP3",
+        "Description": "PLNSUP3"
+      }
+    ]
+  },
+  {
+    "Name": "Communication",
+    "Description": "Communication T",
+    "Placeholder": "INTERN - Inter.",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Location": {
+      "x": 600,
+      "y": 0
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    },
+    "ValidValues": [
+      {
+        "Value": "PLNSUP",
+        "Description": "PLNSUP"
+      },
+      {
+        "Value": "PLNSUP2",
+        "Description": "PLNSUP2"
+      },
+      {
+        "Value": "PLNSUP3",
+        "Description": "PLNSUP3"
+      }
+    ]
+  },
+  {
+    "Name": "Status",
+    "Description": "Status",
+    "Placeholder": "INPROC - In",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 800,
+      "y": 0
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    },
+    "ValidValues": [
+      {
+        "Value": "PLNSUP",
+        "Description": "PLNSUP",
+        "Status": "STATUS1"
+      },
+      {
+        "Value": "PLNSUP2",
+        "Description": "PLNSUP2",
+        "Status": "STATUS2"
+      },
+      {
+        "Value": "PLNSUP3",
+        "Description": "PLNSUP3",
+        "Status": "STATUS3"
+      }
+    ]
+  },
+  {
+    "Name": "PlanNumber",
+    "Description": "Plan Number",
+    "Placeholder": "",
+    "Hint": "",
+    "DataType": "Character",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 0,
+      "y": 75
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    }
+  },
+  {
+    "Name": "ClientId",
+    "Description": "Client ID",
+    "Placeholder": "",
+    "Hint": "",
+    "DataType": "Character",
+    "DefaultValue": null,
+    "Location": {
+      "x": 200,
+      "y": 75
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    }
+  },
+  {
+    "Name": "Organization",
+    "Description": "Organization",
+    "Placeholder": "",
+    "Hint": "",
+    "DataType": "Character",
+    "DefaultValue": null,
+    "Location": {
+      "x": 400,
+      "y": 75
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 350
+    }
+  },
+  {
+    "Name": "MarketCode",
+    "Description": "Market Code",
+    "Placeholder": "Item Type",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 800,
+      "y": 75
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    },
+    "ValidValues": [
+      {
+        "Value": "PLNSUP",
+        "Description": "PLNSUP"
+      },
+      {
+        "Value": "PLNSUP2",
+        "Description": "PLNSUP2"
+      },
+      {
+        "Value": "PLNSUP3",
+        "Description": "PLNSUP3"
+      }
+    ]
+  },
+  {
+    "Name": "PlanType",
+    "Description": "Plan Type",
+    "Placeholder": "",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 1000,
+      "y": 75
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    },
+    "ValidValues": [
+      {
+        "Value": "PLNSUP",
+        "Description": "PLNSUP"
+      },
+      {
+        "Value": "PLNSUP2",
+        "Description": "PLNSUP2"
+      },
+      {
+        "Value": "PLNSUP3",
+        "Description": "PLNSUP3"
+      }
+    ]
+  },
+  {
+    "Name": "Product",
+    "Description": "Product",
+    "Placeholder": "DC- D",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 1200,
+      "y": 75
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    },
+    "ValidValues": [
+      {
+        "Value": "PLNSUP",
+        "Description": "PLNSUP"
+      },
+      {
+        "Value": "PLNSUP2",
+        "Description": "PLNSUP2"
+      },
+      {
+        "Value": "PLNSUP3",
+        "Description": "PLNSUP3"
+      }
+    ]
+  },
+  {
+    "Name": "EntryAssociate",
+    "Description": "Entry Associate",
+    "Placeholder": "",
+    "Hint": "",
+    "DataType": "Character",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 0,
+      "y": 150
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    }
+  },
+  {
+    "Name": "Extension",
+    "Description": "Extension",
+    "Placeholder": "",
+    "Hint": "",
+    "DataType": "Character",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 200,
+      "y": 150
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    }
+  },
+  {
+    "Name": "EntryAssociateDept",
+    "Description": "Entry Associate Dept",
+    "Placeholder": "",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Location": {
+      "x": 400,
+      "y": 150
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    },
+    "ValidValues": [
+      {
+        "Value": "PLNSUP",
+        "Description": "PLNSUP"
+      },
+      {
+        "Value": "PLNSUP2",
+        "Description": "PLNSUP2"
+      },
+      {
+        "Value": "PLNSUP3",
+        "Description": "PLNSUP3"
+      }
+    ]
+  },
+  {
+    "Name": "EffectiveDate",
+    "Description": "Effective Date",
+    "Placeholder": "",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 600,
+      "y": 150
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    }
+  },
+  {
+    "Name": "TOAOnlyPlan",
+    "Description": "TOA Only Plan",
+    "Placeholder": "Item Type",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 0,
+      "y": 225
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    },
+    "ValidValues": [
+      {
+        "Value": "PLNSUP",
+        "Description": "PLNSUP"
+      },
+      {
+        "Value": "PLNSUP2",
+        "Description": "PLNSUP2"
+      },
+      {
+        "Value": "PLNSUP3",
+        "Description": "PLNSUP3"
+      }
+    ]
+  },
+  {
+    "Name": "SamplePlanX3",
+    "Description": "Sample Plan X3",
+    "Placeholder": "",
+    "Hint": "",
+    "DataType": "Value Group",
+    "DefaultValue": null,
+    "Required": true,
+    "Location": {
+      "x": 200,
+      "y": 225
+    },
+    "Size": {
+      "Height": 40,
+      "Width": 175
+    }
+  }
+]
+

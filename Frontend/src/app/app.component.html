@@ -14,11 +14,11 @@
       
       <!-- Render form input fields conditionally based on the field type -->
       <div *ngIf="!field.hidden">
-        <label for="{{ field.name }}">{{ field.label }} <span *ngIf="field.required" style="color: red;">*</span></label>
+        <label for="{{ field.name }}">{{ field.description }} <span *ngIf="field.required" style="color: red;">*</span></label>
         
         <!-- Textbox Input -->
         <input
-          *ngIf="field.inputControlType == 'textbox'"
+          *ngIf="field.dataType == 'Character'"
           [type]="'text'"
           [formControlName]="field.name"
           [placeholder]="field.placeholder"
@@ -28,26 +28,14 @@
         
         <!-- Dropdown Input -->
         <select
-          *ngIf="field.inputControlType == 'dropdown'"
+          *ngIf="field.dataType == 'Value Group'"
           [formControlName]="field.name"
           class="form-select"
           [ngStyle]="{'background-color': field.required ? '#ebc159' : 'transparent'}"
         >
-          <option value="" disabled selected>Select</option>
-          <option *ngFor="let option of field.validValues" [value]="option.value">
-            <table style="width: 100%; border: none; table-layout: fixed;">
-              <tr>
-                <td style="padding: 0; width: 45%; text-align: left; white-space: nowrap;">
-                  {{ option.description }}
-                </td>
-                <td *ngIf="option.status !== null" style="padding: 0; width: 10%; text-align: left; white-space: nowrap;">
-                </td>
-                <td *ngIf="option.status !== null" style="padding: 0; width: 45%; text-align: left; white-space: nowrap;">
-                  {{ option.status }}
-                </td>
-                <td *ngIf="option.status === null" style="padding: 0; width: 10%;"></td>
-              </tr>
-            </table>
+          <option value="" disabled selected class="dropdown-options">Select</option>
+          <option *ngFor="let option of field.validValues" [value]="option.value" class="dropdown-options">    
+                {{ option.description }} {{ option.status }}
           </option>
         </select>
       </div>
@@ -74,16 +62,3 @@
       Submit
   </button>
 </div>
-
-
- <!-- Multi-select Dropdown -->
-        <!-- <select
-          *ngIf="field.inputControlType == 'multiselectdropdown'"
-          [formControlName]="field.name"
-          class="form-select"
-          multiple
-        >
-          <option *ngFor="let value of field.validValues" [value]="value.name">
-            {{ value.description }}
-          </option>
-        </select> -->
