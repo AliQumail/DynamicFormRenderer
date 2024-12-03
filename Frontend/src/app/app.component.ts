@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { Observable } from 'rxjs';
+import { DataService } from './services/data.service';
 
 
 @Component({
@@ -16,7 +17,8 @@ import { Observable } from 'rxjs';
     FormsModule,
     HttpClientModule,
     CommonModule
-  ]
+  ],
+  providers: [DataService],
 })
 export class AppComponent implements OnInit {
   
@@ -24,15 +26,11 @@ export class AppComponent implements OnInit {
   dynamicForm!: FormGroup;
   formsJson: any; 
 
-  constructor(private fb: FormBuilder, private http: HttpClient) {}
+  constructor(private fb: FormBuilder, private dataService: DataService) {}
 
-
-  public getFormsJsonData(): Observable<any> {
-    return this.http.get('https://localhost:7290/api/Forms/GetDynamicForms');
-  }
 
   ngOnInit() {
-   this.getFormsJsonData().subscribe((res: any)=>{
+   this.dataService.getFormsJsonData().subscribe((res: any)=>{
     
     this.formsJson = res;
     const group : any  = {};
