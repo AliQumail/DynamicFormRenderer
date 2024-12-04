@@ -25,11 +25,13 @@ export class AppComponent implements OnInit {
   // No initial value since we don't know the controls
   dynamicForm!: FormGroup;
   formsJson: any; 
+  DLU_TO_PIXELS_CONVERSION_FACTOR = 10;
 
   constructor(private fb: FormBuilder, private dataService: DataService) {}
 
 
   ngOnInit() {
+
    this.dataService.getFormsJsonData().subscribe((res: any)=>{
     
     this.formsJson = res;
@@ -37,12 +39,23 @@ export class AppComponent implements OnInit {
 
     this.formsJson.forEach((field: any) => {
       if (!field.hidden) {
+        field.location.x = this.convertDluToPx(field.location.x, 'x');
+        field.location.y = this.convertDluToPx(field.location.y, 'y');
+        field.size.height = this.convertDluToPx(field.size.height, 'y');
+        field.size.width = this.convertDluToPx(field.size.width, 'x');
+        
         group[field.name] = [field.defaultValue ? field.defaultValue : '', field.required ? [Validators.required]: []];  
       }
     });
     
     this.dynamicForm = this.fb.group(group);
    });
+  }
+
+  convertDluToPx(dlu: number, type: string): number {
+    if (type == 'x') return dlu * this.DLU_TO_PIXELS_CONVERSION_FACTOR/4;
+    else if (type == 'y') return dlu * this.DLU_TO_PIXELS_CONVERSION_FACTOR/8;
+    return 0;
   }
 
   onSubmit() {

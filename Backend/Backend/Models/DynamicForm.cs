@@ -2,35 +2,37 @@
 {
     public class DynamicForm
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string Placeholder { get; set; }
-        public string Hint { get; set; }
-        public string DataType { get; set; }
-        public string DefaultValue { get; set; }
-        public bool Required { get; set; }
-        public Location Location { get; set; }
-        public Size Size { get; set; }
-        public List<ValidValue> ValidValues { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
+        public string placeholder { get; set; }
+        public string hint { get; set; }
+        public string dataType { get; set; }
+        public string defaultValue { get; set; }
+        public bool required { get; set; }
+        public Location location { get; set; }
+        public Size size { get; set; }
+        public List<ValidValue> validValues { get; set; }
     }
 
     public class Location
     {
         public int x { get; set; }
         public int y { get; set; }
+        public string? unit { get; set; }
     }
 
     public class Size
     {
-        public int Height { get; set; }
-        public int Width { get; set; }
+        public int height { get; set; }
+        public int width { get; set; }
+        public string? unit { get; set; }
 
     }
 
     public class ValidValue
     {
-        public string Value { get; set; }
-        public string Description { get; set; }
-        public string? Status { get; set; }
+        public string value { get; set; }
+        public string description { get; set; }
+        public string? status { get; set; }
     }
 }
