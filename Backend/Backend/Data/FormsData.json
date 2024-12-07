@@ -142,8 +142,8 @@
     "defaultValue": null,
     "required": true,
     "location": {
-      "x": 129,
-      "y": 29,
+      "x": 160,
+      "y": 0,
       "unit": "dlu"
     },
     "size": {
